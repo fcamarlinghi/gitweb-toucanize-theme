@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9F54590-FA26-4FA5-BA93-67E4BE045141}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "static", "static", "{A609DBD0-A01F-48AB-A142-4EB50BAB98CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "toucanize", "toucanize", "{2C0CA716-C93C-4F14-8D41-C5F7471305FE}"
+	ProjectSection(SolutionItems) = preProject
+		static\toucanize\bg.png = static\toucanize\bg.png
+		static\toucanize\git-favicon.png = static\toucanize\git-favicon.png
+		static\toucanize\git-logo.png = static\toucanize\git-logo.png
+		static\toucanize\gitweb-toucanize.css = static\toucanize\gitweb-toucanize.css
+		static\toucanize\reset.css = static\toucanize\reset.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8DB6E63D-6C4A-4E4B-ADA5-B526C0DAD33B}"
+	ProjectSection(SolutionItems) = preProject
+		tests\blame.html = tests\blame.html
+		tests\blob.html = tests\blob.html
+		tests\commit.html = tests\commit.html
+		tests\commitdiff.html = tests\commitdiff.html
+		tests\heads.html = tests\heads.html
+		tests\index.html = tests\index.html
+		tests\log.html = tests\log.html
+		tests\search-commit-byauthor.html = tests\search-commit-byauthor.html
+		tests\search_help.html = tests\search_help.html
+		tests\shortlog.html = tests\shortlog.html
+		tests\subtree.html = tests\subtree.html
+		tests\summary.html = tests\summary.html
+		tests\tree.html = tests\tree.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A609DBD0-A01F-48AB-A142-4EB50BAB98CF} = {A9F54590-FA26-4FA5-BA93-67E4BE045141}
+		{8DB6E63D-6C4A-4E4B-ADA5-B526C0DAD33B} = {A9F54590-FA26-4FA5-BA93-67E4BE045141}
+		{2C0CA716-C93C-4F14-8D41-C5F7471305FE} = {A609DBD0-A01F-48AB-A142-4EB50BAB98CF}
+	EndGlobalSection
+EndGlobal

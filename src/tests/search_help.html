@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!-- git web interface version 1.7.4.1, (C) 2005-2006, Kay Sievers <kay.sievers@vrfy.org>, Christian Gierke -->
+<!-- git core binaries version 1.7.4.1 -->
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="generator" content="gitweb/1.7.4.1 git/1.7.4.1" />
+    <meta name="robots" content="index, nofollow" />
+    <title>ipsumgits - lorem-ipsum.git/search_help</title>
+    <link rel="stylesheet" type="text/css" href="../static/toucanize/gitweb-toucanize.css" />
+    <!--<base href="#" />
+    <link rel="alternate" title="lorem-ipsum.git - log - RSS feed" href="#"
+        type="application/rss+xml" />
+    <link rel="alternate" title="lorem-ipsum.git - log - RSS feed (no merges)" href="#"
+        type="application/rss+xml" />
+    <link rel="alternate" title="lorem-ipsum.git - log - Atom feed" href="#"
+        type="application/atom+xml" />
+    <link rel="alternate" title="lorem-ipsum.git - log - Atom feed (no merges)" href="#"
+        type="application/atom+xml" />-->
+    <link rel="shortcut icon" href="../static/toucanize/git-favicon.png" type="image/png" />
+</head>
+<body>
+    <div class="page_header">
+        <a title="git homepage" href="http://git-scm.com/">
+            <img class="logo" height="27" src="../static/toucanize/git-logo.png" alt="git" width="72" /></a><a
+                href="index.html">git://server</a> / <a href="summary.html">lorem-ipsum.git</a>
+        / search_help
+    </div>
+    <form method="get" action="#" enctype="application/x-www-form-urlencoded">
+    <div class="search">
+        <input name="a" type="hidden" value="search" />
+        <input name="h" type="hidden" value="HEAD" />
+        <select name="st">
+            <option selected="selected" value="commit">commit</option>
+            <option value="grep">grep</option>
+            <option value="author">author</option>
+            <option value="committer">committer</option>
+            <option value="pickaxe">pickaxe</option>
+        </select><sup><a href="search_help.html">?</a></sup> search:
+        <input type="text" name="s" />
+        <span title="Extended regular expression">
+            <label>
+                <input type="checkbox" name="sr" value="1" />re</label></span></div>
+    </form>
+    <div class="page_nav">
+        <a href="summary.html">summary</a> | <a href="shortlog.html">shortlog</a> | <a href="log.html">
+            log</a> | <a href="commit.html">
+                commit</a> | <a href="commitdiff.html">
+                    commitdiff</a> | <a href="tree.html">tree</a><br />
+        <br />
+    </div>
+    <p><strong>Pattern</strong> is by default a normal string that is matched precisely
+        (but without regard to case, except in the case of pickaxe). However, when you check
+        the <em>re</em> checkbox, the pattern entered is recognized as the POSIX extended
+        <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression</a>
+        (also case insensitive).</p>
+    <dl>
+        <dt><b>commit</b></dt>
+        <dd>The commit messages and authorship information will be scanned for the given pattern.</dd>
+        <dt><b>grep</b></dt>
+        <dd>All files in the currently selected tree (HEAD unless you are explicitly browsing
+            a different one) are searched for the given pattern. On large trees, this search
+            can take a while and put some strain on the server, so please use it with some consideration.
+            Note that due to git-grep peculiarity, currently if regexp mode is turned off, the
+            matches are case-sensitive.</dd>
+        <dt><b>author</b></dt>
+        <dd>Name and e-mail of the change author and date of birth of the patch will be scanned
+            for the given pattern.</dd>
+        <dt><b>committer</b></dt>
+        <dd>Name and e-mail of the committer and date of commit will be scanned for the given
+            pattern.</dd>
+        <dt><b>pickaxe</b></dt>
+        <dd>All commits that caused the string to appear or disappear from any file (changes
+            that added, removed or "modified" the string) will be listed. This search can take
+            a while and takes a lot of strain on the server, so please use it wisely. Note that
+            since you may be interested even in changes just changing the case as well, this
+            search is case sensitive.</dd>
+    </dl>
+    <div class="page_footer">
+        <a class="rss_logo" title="log RSS feed" href="#">RSS</a>
+        <a class="rss_logo" title="log Atom feed" href="#">Atom</a>
+    </div>
+    <!--<script type="text/javascript" src="static/gitweb.js"></script>-->
+</body>
+</html>

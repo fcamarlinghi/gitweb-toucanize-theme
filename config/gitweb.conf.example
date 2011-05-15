@@ -1,0 +1,43 @@
+# Location of the git binary
+our $GIT = "/usr/bin/git";
+
+# Project root for gitweb
+our $projectroot = "/path/to/repositories";
+our $projects_list = "/path/to/projects.list";
+
+# Site name
+our $site_name = "ipsumgits";
+
+# Base URL for project trees
+our @git_base_url_list = ("ssh://gitolite\@lorem.ipsum");
+
+# Enable PATH_INFO so the server can produce URLs of the
+# form: http://server/project.git/xxx/xxx
+$feature{'pathinfo'}{'default'} = [1];
+
+# Enable blame, pickaxe search, snapshop, search, and grep
+# support, but still allow individual projects to turn them off.
+$feature{'blame'}{'default'} = [1];
+$feature{'blame'}{'override'} = [1];
+
+$feature{'pickaxe'}{'default'} = [1];
+$feature{'pickaxe'}{'override'} = [1];
+
+$feature{'snapshot'}{'default'} = [1];
+$feature{'snapshot'}{'override'} = [1];
+
+$feature{'search'}{'default'} = [1];
+
+$feature{'grep'}{'default'} = [1];
+$feature{'grep'}{'override'} = [1];
+
+# Set UTF-8 as encoding
+our $fallback_encoding = "utf-8";
+
+# Set Home link text
+our $GITWEB_HOME_LINK_STR = "projects";
+
+# Set our stylesheet and images
+@stylesheets = ("static/toucanize/gitweb-toucanize.css");
+our $favicon = "static/toucanize/git-favicon.png";
+our $logo = "static/toucanize/git-logo.png";

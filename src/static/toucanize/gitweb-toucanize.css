@@ -1,0 +1,288 @@
+﻿/* Global styles */
+ol li { list-style-type: decimal; list-style-position: outside; }
+img { vertical-align: middle; }
+blockquote { margin: 0 20px 24px 20px; border-left: 5px solid #ccc; padding-left: 10px; text-indent: -0.4em; }
+small { font-size: 0.75em; }
+strong, b { font-weight: bold; }
+sup { position: relative; bottom: 0.3em; vertical-align: baseline; }
+sub { position: relative; bottom: -0.2em; vertical-align: baseline; }
+acronym, abbr { cursor: help; letter-spacing: 1px; border-bottom: 1px dashed; }
+em { font-style: italic; }
+ol { list-style-type: decimal; list-style-position: outside; padding-left: 20px; }
+dt { padding: 0 12px; text-transform: capitalize; }
+dd { padding: 0 12px; margin-bottom: 24px; }
+p { margin-bottom: 24px; }
+
+/* Selection colors (to work as espected each selector must be kept on a separate line) */
+a:link { -webkit-tap-highlight-color: #5eafee; }
+::-moz-selection { background: #5eafee; color: #fff; text-shadow: none; }
+::selection { background: #5eafee; color: #fff; text-shadow: none; }
+
+/* Links */
+a, a:link, a:visited { color: #1585f7; text-decoration: none; -webkit-transition: 0.1s ease; -moz-transition: 0.1s ease; -o-transition: 0.1s ease; transition: 0.1s ease; }
+a:active, a:hover { color: #5eafee; text-decoration: underline /*;border-bottom:1px solid #5eafee*/; }
+
+/* Forms & Messages */
+form p { margin-bottom: 1em; }
+input, textarea, select { padding: 4px; }
+input, textarea, select { border: 1px solid #dfdfdf; border-radius: 2.5px; }
+textarea { resize: vertical; }
+label.error, .field-validation-error { color: #f94e03; padding: 0; }
+input:invalid, textarea:invalid { border-radius: 2.5px; box-shadow: 0 0 0; }
+
+/* Layout */
+body { background: url(bg.png) top left repeat-x #fff; margin: 0; padding: 0 24px; min-width: 940px; }
+
+.page_header { position: relative; height: 48px; padding: 24px 0; margin-bottom: 24px; }
+.logo { position: absolute; top: 34px; right: 0; }
+
+.page_nav { /*height:48px;*/ text-transform: capitalize; height: 96px; }
+.page_nav:first-line { line-height: 48px; margin-bottom: 24px; font-size: 1.25em; }
+.page_path { padding: 0; border-bottom: 1px solid #dfdfdf; }
+
+.title_text { border-bottom: 1px solid #dfdfdf; }
+.page_body { padding: 24px 16px; }
+.list_head { padding: 0; margin-bottom: 24px; border-top: 1px solid #dfdfdf; }
+.page_body .list_head { border: 0; margin: 0; }
+.header + .page_body { padding-top: 0; }
+
+.page_body .patchset { margin: -24px 0 24px 0; }
+.age { position: relative; float: left; width: 20%; }
+.title_text + .log_body { word-wrap: break-word; padding: 12px 0 12px 20%; }
+.log_link { padding: 0; position: relative; float: left; width: 20%; }
+
+.page_footer { height: 48px; margin-bottom: 24px; }
+.page_footer_text { float: left; color: #555; font-style: italic; }
+
+/* Typography */
+body { font: 1em/1.5em Calibri, Arial, "Helvetica Neue" , Helvetica, sans-serif; letter-spacing: -0.025em; color: #333; font-weight: 300; font-style: normal; }
+div:first-letter { text-transform: uppercase; }
+
+.page_header { font-size: 2em; line-height: 48px; font-weight: 100; letter-spacing: -0.05em; font-family: Cambria, Georgia, "Times New Roman" , Times, serif; }
+.page_header:first-letter { text-transform: none; }
+
+div.title, div.header, th { text-align: left; font-size: 1.5em; font-weight: 100; letter-spacing: -0.05em; line-height: 1em; background: transparent; }
+div.title, div.header { font-size: 2em; padding-top: 0; padding-bottom: 24px; }
+a.title:hover, a.title:active { border-bottom: 0; }
+.header a.title:hover { text-decoration: none; }
+
+.page_body, .sha1, .pre, .diff, .diff_tree, .mode { letter-spacing: -0.065em; font-family: Consolas, "Andale Mono WT" , "Andale Mono" , "Lucida Console" , "Lucida Sans Typewriter" , "DejaVu Sans Mono" , "Bitstream Vera Sans Mono" , "Liberation Mono" , "Nimbus Mono L" , Monaco, "Courier New" , Courier, monospace; }
+.title_text { font-size: 0.875em; letter-spacing: -0.005em; }
+.sha1 { letter-spacing: -0.005em; }
+.list_head { font-style: italic; }
+.pre, .diff { font-size: 0.75em; word-wrap: break-word; line-height: 1.25em; }
+
+.header + .header, .log_body + .header { font-size: 1.5em; padding-bottom: 0; }
+.age { font-style: italic; font-size: 0.75em; }
+.linenr { text-align: right; }
+a.linenr { color: #999999; text-decoration: none; }
+
+.atnight { color: #f23d46; }
+.match { color: #e00000; }
+.binary { font-style: italic; }
+.remote { margin: 0.5em; border: 1px solid #d9d8d1; display: inline-block; }
+.cntrl { border: 1px dashed #aaaaaa; padding: 0 2px; margin: 0 2px; }
+
+/* RSS */
+.rss_logo:link { float: right; margin-left: 8px; font-size: 0.875em; line-height: 16px; color: #fff; display: inline-block; padding: 4px 10px; background: #fb9f55; border: 1px solid #f87b43; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; -webkit-background-clip: padding-box; outline: none; position: relative; zoom: 1; background-image: -ms-linear-gradient(top,#fb9f55 0,#f87b43 100%); background-image: -moz-linear-gradient(top,#fb9f55 0,#f87b43 100%); background-image: -o-linear-gradient(top,#fb9f55 0,#f87b43 100%); background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fb9f55),color-stop(1,#f87b43)); background-image: -webkit-linear-gradient(top,#fb9f55 0,#f87b43 100%); background-image: linear-gradient(top,#fb9f55 0,#f87b43 100%); -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-background-clip: border-box; -moz-background-clip: border-box; background-clip: border-box; }
+.rss_logo:hover { background-color: #f77b17; border-color: #f75c17; background-image: -ms-linear-gradient(top,#f77b17 0,#f75c17 100%); background-image: -moz-linear-gradient(top,#f77b17 0,#f75c17 100%); background-image: -o-linear-gradient(top,#f77b17 0,#f75c17 100%); background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f77b17),color-stop(1,#f75c17)); background-image: -webkit-linear-gradient(top,#f77b17 0,#f75c17 100%); background-image: linear-gradient(top,#f77b17 0,#f75c17 100%); }
+.rss_logo.generic { background-color: #ff8800; }
+.rss_logo.generic:hover { background-color: #ee7700; }
+
+/* File status */
+.file_status.new { color: #008800; }
+.file_status.deleted { color: #f23d46; }
+.file_status.moved, .file_status.mode_chnge { color: #777777; }
+.file_status.copied { color: #70a070; }
+
+/* Refs */
+.refs span { margin: 0 0.5em; padding: 2px; font-size: 0.75em; border: 1px solid #ffaaff; border-radius: 5px 0 0 5px; color: #000; }
+.refs span:before { content: "\26ab\00a0"; color: #fff; }
+.refs span:after { content: "\00a0"; }
+.refs span a { color: #000; }
+.refs span a:hover, span.refs span a:active { color: #000; }
+.refs .indirect { font-style: italic; }
+.refs .head { background: #d7ef65; border-color: #bdd25b; }
+.refs .head:hover { background: #d1f235; border-color: #beda3c; }
+.refs .ref { background: #eef9b1; border-color: #ccccff #0033cc #0033cc #ccccff; }
+.refs .tag { background-color: #ffffaa; border-color: #ffffcc #ffee00 #ffee00 #ffffcc; }
+.header .refs span { font-size: 0.5em; }
+
+/* Diffs */
+.patch { margin-bottom: 24px; }
+.diff { padding: 0 16px; }
+
+.diff.header, .diff.extended_header { white-space: normal; }
+.diff.header { font-size: 20px; background: #edece6; padding: 12px 16px; border: 1px solid #dfdfdf; border-width: 1px 0; }
+
+.diff.extended_header, .diff.extended_header a, .diff.extended_header { color: #777; }
+.diff.extended_header .info { color: #b0b0b0; }
+.diff.extended_header { background: #f6f5ee; padding: 4px 16px; }
+
+.diff.from_file a.path, .diff.from_file { color: #f23d46; }
+.diff.to_file a.path, .diff.to_file { color: #007000; }
+.diff.add { color: #008800; }
+.diff.rem { color: #f23d46; }
+.diff.chunk_header a, .diff.chunk_header { color: #db2bc8; }
+.diff.chunk_header { border-top: 1px dotted #ffe0ff; margin: 12px 0; }
+.diff.chunk_header .chunk_info { background: #ffeeff; }
+.diff.chunk_header .section { color: #aa22aa; }
+.diff.incomplete { color: #ccc; }
+.diff.nodifferences { font-weight: bold; color: #600000; }
+
+/* Search boxex */
+.search, .projsearch { width: 50%; height: 48px; line-height: 48px; position: absolute; right: 24px; top: 120px; margin-bottom: 24px; vertical-align: middle; text-align: right; text-transform: capitalize; }
+.search sup:after { content: "\2002\2013\2002"; }
+.search sup, .projsearch sup { position: static; bottom: 0; margin: 0 0 0 4px; }
+.projsearch { top: 129px; }
+
+/* Tables */
+table { width: 100%; margin-bottom: 24px; }
+td, th, .title { background: #fff; padding: 16px 0 16px 16px; vertical-align: middle; vertical-align: middle; }
+tr td:last-child, tr th:last-child { padding-right: 16px; }
+.title { padding-left: 0; }
+.dark td { background: #f9f9f9; }
+tr:hover td, tr:nth-child(even):hover td { background-color: #ededed; }
+td p { margin: 0; }
+
+td.current_head { text-decoration: none; }
+td.current_head:before { content: "\21fe\00a0"; }
+
+/* Project List */
+.project_list a.header:after { content: "\25BE"; }
+.project_list td:first-child { font-size: 1.25em; width: 20%; }
+.project_list td:nth-child(2) { width: 30%; }
+.project_list td:nth-child(3) { width: 12%; }
+.project_list td:nth-child(4) { width: 20%; }
+.project_list td:last-child { width: 18%; }
+.project_list .noage { color: #808080; font-style: italic; }
+/* noage: "No commits" */
+.project_list .age0 { color: #008800; font-style: italic; }
+/* age0: age < 60*60*2 */
+.project_list .age1 { color: #036b03; font-style: italic; }
+/* age1: 60*60*2 <= age < 60*60*24*2 */
+.project_list .age2 { font-style: italic; }
+/* age2: 60*60*24*2 <= age */
+
+/* Project Summary */
+.page_nav + div.title { padding-top: 0; padding-bottom: 24px; margin-top: -24px; }
+.page_nav + div.title:before { content: "Details"; }
+/* remove empty title */
+.projects_list { }
+.projects_list td { padding: 0 12px 12px; }
+.projects_list tr:hover td, .projects_list tr:nth-child(even):hover td { background-color: #fff; }
+.projects_list td:first-child { width: 15%; text-transform: capitalize; font-weight: bold; }
+.projects_list td:first-child:after { content: ":"; }
+tr#metadata_desc { text-transform: capitalize; }
+
+/* Shortlog */
+.shortlog td { width: 33%; }
+.shortlog td:first-child { width: 15%; }
+.shortlog td:nth-child(2) { width: 15%; }
+.shortlog td:nth-child(3) { width: 50%; }
+.shortlog td:last-child { width: 20%; }
+.shortlog .subject { font-weight: normal; }
+
+/* Heads */
+.heads td:first-child { width: 30%; }
+.heads td:nth-child(2) { width: 50%; }
+.heads td:last-child { width: 20%; }
+
+/* Commit object_header */
+.object_header td { padding-top: 0; padding-bottom: 0; }
+.object_header td:first-child { width: 15%; text-transform: capitalize; font-weight: bold; }
+.object_header td:nth-child(2) { width: 40%; }
+.object_header td:nth-child(3) { width: 45%; }
+.object_header tr:hover td { background-color: #fff; }
+
+/* Commit diff_tree */
+.diff_tree { font-size: 0.875em; letter-spacing: -0.005em; }
+.diff_tree td { padding-top: 6px; padding-bottom: 6px; }
+.combined.diff_tree th { text-align: center; }
+.combined.diff_tree td { padding-right: 24px; }
+.combined.diff_tree .link, .combined.diff_tree .link { padding: 0px 2px; }
+.combined.diff_tree .nochange a { color: #6666ff; }
+.combined.diff_tree .nochange a:hover, .combined.diff_tree .nochange a:visited { color: #d06666; }
+
+/* Tree */
+.tree td { padding-top: 6px; padding-bottom: 6px; }
+.tree td:first-child { width: 10%; }
+.tree td:nth-child(2) { width: 8%; }
+.tree td:nth-child(3) { width: 42%; }
+.tree td:nth-child(4) { width: 40%; }
+.tree .size { text-align: right; }
+
+/* Blame */
+.blame { overflow: hidden; }
+.blame th { font-size: 0.875em; letter-spacing: -0.005em; }
+.blame td { padding: 0 16px; }
+.blame td:first-child { vertical-align: top; }
+.blame .pre { white-space: pre-wrap; }
+.blame .linenr { font-size: 0.875em; line-height: 0.75em; padding-right: 0; }
+.blame tr:hover td, .blame tr:nth-child(even):hover td { background: #fff; }
+.blame tr.dark:hover td { background: #f9f9f9; }
+
+.blame .age0 { color: #009900; background: transparent; font-weight: bold; }
+.blame .age1 { color: #009900; background: transparent; }
+.blame .age2 { font-style: italic; }
+
+.boundary .sha1, .no-previous .linenr { font-weight: bold; }
+/* boundary commits in 'blame' view and commits without "previous" */
+
+.color1 { background: #f6fff6; }
+/* for 'blame_incremental', during processing */
+.color2 { background: #f6f6ff; }
+.color3 { background: #fff6f6; }
+
+
+/***********************************************
+
+    Unchecked styles 
+*/
+.error { color: red; background-color: yellow; }
+
+img.avatar { vertical-align: middle; }
+
+a.list img.avatar { border-style: none; }
+
+div#generating_info { margin: 4px; font-size: smaller; text-align: center; color: #505050; }
+
+div.readme { padding: 8px; }
+
+span.signoff { color: #888888; }
+
+.author_date, .author { font-style: italic; }
+
+div.author_date { padding: 8px; border-bottom: 1px solid #d9d8d1; }
+
+a.subject, a.name { font-weight: bold; }
+
+table.tags a.subject { font-weight: normal; }
+
+a.text { text-decoration: none; color: #0000cc; }
+a.text:visited { text-decoration: none; color: #880000; }
+
+a.text:hover { text-decoration: underline; color: #880000; }
+
+/* progress of blame_interactive */
+div#progress_bar { height: 2px; margin-bottom: -2px; background-color: #d8d9d0; }
+div#progress_info { float: right; text-align: right; }
+
+/* styling of diffs (patchsets): commitdiff and blobdiff views */
+div.index_include { border: solid #d9d8d1; border-width: 0px 0px 1px; padding: 12px 8px; }
+
+/* Style definition generated by highlight 2.4.5, http://www.andre-simon.de/ */
+/* Highlighting theme definition: */
+.num { color: #2928ff; }
+.esc { color: #ff00ff; }
+.str { color: #ff0000; }
+.dstr { color: #818100; }
+.slc { color: #838183; font-style: italic; }
+.com { color: #838183; font-style: italic; }
+.dir { color: #008200; }
+.sym { color: #000000; }
+.line { color: #555555; }
+.kwa { color: #000000; font-weight: bold; }
+.kwb { color: #830000; }
+.kwc { color: #000000; font-weight: bold; }
+.kwd { color: #010181; }
