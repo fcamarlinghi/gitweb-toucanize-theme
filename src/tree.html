@@ -7,9 +7,9 @@
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <meta name="generator" content="gitweb/1.7.4.1 git/1.7.4.1" />
     <meta name="robots" content="index, nofollow" />
-    <title>ipsumgits - lorem-ipsum.git/heads</title>
-    <link rel="stylesheet" type="text/css" href="../static/toucanize/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../static/toucanize/lorem-ipsum.css" />
+    <title>ipsumgits - lorem-ipsum.git/tree</title>
+    <link rel="stylesheet" type="text/css" href="static/toucanize/reset.css" />
+    <link rel="stylesheet" type="text/css" href="static/toucanize/gitweb-toucanize.css" />
     <!--<base href="#" />
     <link rel="alternate" title="lorem-ipsum.git - log - RSS feed" href="/git/lorem-ipsum.git/rss"
         type="application/rss+xml" />
@@ -19,19 +19,19 @@
         type="application/atom+xml" />
     <link rel="alternate" title="lorem-ipsum.git - log - Atom feed (no merges)" href="/git/lorem-ipsum.git/atom?opt=--no-merges"
         type="application/atom+xml" />-->
-    <link rel="shortcut icon" href="../static/toucanize/git-favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="static/toucanize/git-favicon.png" type="image/png" />
 </head>
 <body>
     <div class="page_header">
         <a title="git homepage" href="http://git-scm.com/">
-            <img class="logo" height="27" src="../static/toucanize/git-logo.png" alt="git" width="72" /></a><a
+            <img class="logo" height="27" src="static/toucanize/git-logo.png" alt="git" width="72" /></a><a
                 href="index.html">git://server</a> / <a href="summary.html">lorem-ipsum.git</a>
-        / heads
+        / tree
     </div>
     <form method="get" action="#" enctype="application/x-www-form-urlencoded">
     <div class="search">
         <input name="a" type="hidden" value="search" />
-        <input name="h" type="hidden" value="HEAD" />
+        <input name="h" type="hidden" value="f4b922afb2ca2c0db225a2f493b78729a7add4f6" />
         <select name="st">
             <option selected="selected" value="commit">commit</option>
             <option value="grep">grep</option>
@@ -48,26 +48,47 @@
         <a href="summary.html">summary</a> | <a href="shortlog.html">shortlog</a> | <a href="log.html">
             log</a> | <a href="commit.html">
                 commit</a> | <a href="commitdiff.html">
-                    commitdiff</a> | <a href="tree.html">tree</a><br />
-        <a href="tags.html">tags</a> | heads<br />
+                    commitdiff</a> | tree<br />
+        <br />
     </div>
     <div class="header">
-        <a class="title" href="summary.html">lorem-ipsum.git</a>
+        <a class="title" href="commit.html">
+            First commit for the 'lorem-ipsum' project.</a>
     </div>
-    <table class="heads">
-        <tr class="dark">
-            <td><i>19 hours ago</i></td>
-            <td class="current_head"><a class="list name" href="#">
-                master</a></td>
-            <td class="link"><a href="#">shortlog</a>
-                | <a href="#">log</a> | <a href="#">
-                    tree</a></td>
-        </tr>
-    </table>
+    <div class="page_body">
+        <table class="tree">
+            <tr class="dark">
+                <td class="mode">drwxr-xr-x</td>
+                <td class="size">-</td>
+                <td class="list"><a href="subtree.html">
+                    lorem-ipsum</a></td>
+                <td class="link"><a href="subtree.html">
+                    tree</a> | <a href="#">
+                        history</a></td>
+            </tr>
+            <tr class="light">
+                <td class="mode">drwxr-xr-x</td>
+                <td class="size">-</td>
+                <td class="list"><a href="#">
+                    dolor-sit-amet</a></td>
+                <td class="link"><a href="#">
+                    tree</a> | <a href="#">
+                        history</a></td>
+            </tr>
+            <tr class="dark">
+                <td class="mode">drwxr-xr-x</td>
+                <td class="size">-</td>
+                <td class="list"><a href="#">
+                    utils</a></td>
+                <td class="link"><a href="#">
+                    tree</a> | <a href="#">
+                        history</a></td>
+            </tr>
+        </table>
+    </div>
     <div class="page_footer">
-        <a class="rss_logo generic" title="log RSS feed" href="#">RSS</a>
-        <a class="rss_logo generic" title="log Atom feed" href="#">
-            Atom</a>
+        <a class="rss_logo" title="log RSS feed" href="#">RSS</a>
+        <a class="rss_logo" title="log Atom feed" href="#">Atom</a>
     </div>
     <!--<script type="text/javascript" src="static/gitweb.js"></script>-->
 </body>

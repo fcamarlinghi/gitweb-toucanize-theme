@@ -59,12 +59,12 @@ body { font: 1em/1.5em Calibri, Arial, "Helvetica Neue" , Helvetica, sans-serif;
 div:first-letter { text-transform: uppercase; }
 
 .page_header { font-size: 2em; line-height: 48px; font-weight: 100; letter-spacing: -0.05em; font-family: Cambria, Georgia, "Times New Roman" , Times, serif; }
-.page_header:first-letter { text-transform: none; }
+.page_header:first-letter, .diff.header:first-letter, .diff.extended_header:first-letter { text-transform: none; }
 
 div.title, div.header, th { text-align: left; font-size: 1.5em; font-weight: 100; letter-spacing: -0.05em; line-height: 1em; background: transparent; }
 div.title, div.header { font-size: 2em; padding-top: 0; padding-bottom: 24px; }
 a.title:hover, a.title:active { border-bottom: 0; }
-.header a.title:hover { text-decoration: none; }
+.header a.title:hover, .header a.title:active { text-decoration: none; }
 
 .page_body, .sha1, .pre, .diff, .diff_tree, .mode { letter-spacing: -0.065em; font-family: Consolas, "Andale Mono WT" , "Andale Mono" , "Lucida Console" , "Lucida Sans Typewriter" , "DejaVu Sans Mono" , "Bitstream Vera Sans Mono" , "Liberation Mono" , "Nimbus Mono L" , Monaco, "Courier New" , Courier, monospace; }
 .title_text { font-size: 0.875em; letter-spacing: -0.005em; }
@@ -97,8 +97,8 @@ a.linenr { color: #999999; text-decoration: none; }
 
 /* Refs */
 .refs span { margin: 0 0.5em; padding: 2px; font-size: 0.75em; border: 1px solid #ffaaff; border-radius: 5px 0 0 5px; color: #000; }
-.refs span:before { content: "\26ab\00a0"; color: #fff; }
-.refs span:after { content: "\00a0"; }
+.refs span:before { content: "\26AB\00A0"; color: #fff; }
+.refs span:after { content: "\00A0"; }
 .refs span a { color: #000; }
 .refs span a:hover, span.refs span a:active { color: #000; }
 .refs .indirect { font-style: italic; }
@@ -196,7 +196,7 @@ tr#metadata_desc { text-transform: capitalize; }
 .object_header tr:hover td { background-color: #fff; }
 
 /* Commit diff_tree */
-.diff_tree { font-size: 0.875em; letter-spacing: -0.005em; }
+.diff_tree { font-size: 0.875em; letter-spacing: -0.005em; line-height: 1em; }
 .diff_tree td { padding-top: 6px; padding-bottom: 6px; }
 .combined.diff_tree th { text-align: center; }
 .combined.diff_tree td { padding-right: 24px; }
@@ -205,6 +205,7 @@ tr#metadata_desc { text-transform: capitalize; }
 .combined.diff_tree .nochange a:hover, .combined.diff_tree .nochange a:visited { color: #d06666; }
 
 /* Tree */
+.tree { font-size: 0.875em; letter-spacing: -0.005em; line-height: 1em;}
 .tree td { padding-top: 6px; padding-bottom: 6px; }
 .tree td:first-child { width: 10%; }
 .tree td:nth-child(2) { width: 8%; }
